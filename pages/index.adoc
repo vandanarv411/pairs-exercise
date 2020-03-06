@@ -1,0 +1,16 @@
+= Pair Exercise
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Welcome to Pair Exercise!
+
+== A Fun Set of Topics
+
+We're excited to have the chance to create some content with you today!
+The following topic has some problems:
+
+configure-autodiscovery-4-task.adoc
+
+Check out the JIRA ticket image in assets/images/pair-exercise-jira.png
+
