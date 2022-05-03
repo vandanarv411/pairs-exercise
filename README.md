@@ -1,4 +1,5 @@
-= Paired Writing Exercise
+# Paired Writing Exercise
+
 For this exercise, you will pair with a technical writer to edit the file reconnection-strategies.adoc, which has some issues that should be fixed.
 
 You are welcome to ask questions as you go along. Thinking aloud is encouraged.
