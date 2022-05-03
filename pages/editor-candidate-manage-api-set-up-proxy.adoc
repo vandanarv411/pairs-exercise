@@ -1,0 +1,57 @@
+= Quick start: manage an API and set up a proxy for
+
+//Exercise for editor candidate
+
+In this following walkthrough, we will how to create an API that can be mannged via API Manager and setting up a proxy for it that runs in CloudHub. Just follow the steps!
+
+== Creating an API asset in Exchange
+
+Use the following steps:
+
+
+In order to have an API that can be managed through API Manager, the first step consists in you create an API asset in Anypoint Exchange.
+
+. <<create_an_api, Create an API in Exchange>>
+. <<import-api-to-API-Manager, Import Your API to API Manager.>>
+. <<<<configure_and_deploy_to_cloudhub, Configure an API proxy and deploy it to CloudHub.>>
+
+. Go to this URL https://anypoint.mulesoft.com/exchange
+. Click in `New Asset` button.
+. In the `Publish New Asset` view, choose the asset type and and asset name. In case of the asset type being RAML, OAS or WSDL, the corresponding associated file has to also be specified.
+. Click on `Publish button.`
+
+Now, we have successfully created an API asset in the Exchange!
+
+== Managing the API from API Manager
+
+Next step consists of importing the created asset to API Manager, so the API can be managed as in deploy and download proxies apply policies, configure access to it and more.
+
+Follow this steps in order to import your API in API Manager to manage it:
+
+. In the API Administration Dashboard click in Manage API > Manage API from Exchange
+
+In the next screen, you have to complete the following fields:
+*API Name*: Type the first characters of the API name that you created in Exchange.
+**Managing Type*: You may choose `Basic Endpoint` and `Endpoint with Proxy`. Here we are using the endpoint with proxy.*Asset Type*: For this example we are going to use HTTP, but maybe you want to create a RAML/OAS or WSDL API.
+ *Mule version* If you are managing an API for Mule 4 and above, put an `x` in this checkbox.
+*Implementation URI*: Enter the URL for which the API implementation resides. For this example, we are using http://my-implementation.company.com
+
+If you are managing an API for Mule 4 or above, please make sure you select the checkbox. In this example, we are creating the API for Mule 4.
+
+If you need further configuration, you may want to click in advanced options, and fill in the options available as displayed.
+
+Click on `Save`.
+
+After that, the API settings view is shown with the current information of the recently imported API.
+So far, we have created an instance of an API Specification that can now be managed.
+
+== Conf
+igure a Proxy to Cloudhub
+
+Deploying an API Proxy to CloudHub lets you protect your API implementation without having to worry about the infrastructure details, and quickly. We do all the hard work for you, so now lets do this final step:
+
+. In the API Settings view, make sure your `Proxy deployment target` configuration is set to `CloudHub`
+. Scroll down until you hit `Deployment Configuration`.
+. In `Runtime Version`, select the runtime version you need, and set a name for your application.
+. Finally, click on `deploy`.
+Once you see the following pop-up, then your API proxy is successfully running in a CloudHub instance.
